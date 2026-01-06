@@ -1,26 +1,14 @@
 import os
-os.system("cls")
-
-set1 = {10,15,22,34,10,15,25,15}
-
-# set1.add(55)
-# print(set1)
-
-# set1.remove(10)
-# print(set1)
-
-# a = set1.pop()
-# print(set1)
-
-# set1.discard(10)
-# print(set1)
-
-# set1.clear()
-# print(set1)
-
-# set1.update([10,12,13,14,16])
-# print(set1)
-
-set2 = set1.union([10,12,13,14,16])
-print(set1)
-print(set2)
+set1={100, 20, 45, 80, 70, 50}
+set2={30, 55, 70, 60, 20, 100}
+set3= set1.intersection(set2)
+for i in set3.copy():
+    if i < 60:
+        set3.discard(i)
+summa=0
+sanash=0
+for i in set3:
+    summa+=i
+    sanash+=1
+print(summa/sanash)
+        

@@ -1,5 +1,8 @@
-import os 
-set1 = {10, 15, 22, 34, 10, 15, 25, 15}
-# set1[1] = 'salom'
-print(set1)
-# print (set1[2])
+import os
+set1 = {"Artel","Alif","Yandex","Google","Meta"}
+set2 = {"Google","Apple","Amazon","Meta"}
+set3 = {"Alibaba","Uzum","Meta","Google","Amazon"}
+set5 = set1.intersection(set2,set3)
+set4 = set1.difference(set2,set3)
+print(set5)
+print(set4)
